@@ -19,7 +19,7 @@ import time
 chromedriver_path = r"C:\WebDriver\chromedriver.exe"  # ここに実際のパスを記入
 
 # 保存するパス
-save_path = r"C:\Users\gakut\OneDrive\デスクトップ\テスト\homepage_screenshot.png"
+save_path = r"/mnt/data/スクリーンショット 2024-05-26 091014.png"
 
 # ブラウザの設定
 options = webdriver.ChromeOptions()
@@ -33,7 +33,7 @@ service = Service(executable_path=chromedriver_path)
 driver = webdriver.Chrome(service=service, options=options)
 
 # ウェブページを開く
-url = 'http://example.com'  # ここにスクリーンショットを撮りたいページのURLを入力
+url = 'http://.com'  # ここにスクリーンショットを撮りたいページのURLを入力
 driver.get(url)
 
 # ページが完全に読み込まれるまで待つ
@@ -56,7 +56,7 @@ image.show()
 from PIL import Image
 
 # 画像を開く
-image_path =  r'/mnt/data/スクリーンショット 2024-05-26 091014.png'
+image_path =  r'/mnt/data/スクリーンショット 2024-05-26 091014.png'#22行目と同じパス
 image = Image.open(image_path)
 pixels = image.load()
 
